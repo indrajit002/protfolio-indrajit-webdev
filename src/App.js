@@ -160,7 +160,7 @@ function App() {
   method="POST"
 >
   {/* Required Access Key */}
-  <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" />
+  <input type="hidden" name="access_key" value="02a98932-1e29-4848-ad60-e805176fd16f" />
 
   <div className="input-control i-c-2">
     <input type="text" name="name" required placeholder="YOUR NAME" />
@@ -186,7 +186,7 @@ function App() {
 
   <div className="submit-btn">
     <button type="submit" className="main-btn">
-      <span className="btn-text">Send Message</span>
+      <span className="btn-text">faPaperPlane</span>
       <span className="btn-icon">
         <FontAwesomeIcon icon={faPaperPlane} />
       </span>
