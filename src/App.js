@@ -154,26 +154,46 @@ function App() {
                 </div>
               </div>
               <div className="right-contact">
-                <form className="contact-form">
-                  <div className="input-control i-c-2">
-                    <input type="text" required placeholder="YOUR NAME" />
-                    <input type="email" required placeholder="YOUR EMAIL" />
-                  </div>
-                  <div className="input-control">
-                    <input type="text" required placeholder="ENTER SUBJECT" />
-                  </div>
-                  <div className="input-control">
-                    <textarea cols="15" rows="8" placeholder="Message Here..."></textarea>
-                  </div>
-                  <div className="submit-btn">
-                    <a href="/path/to/your/cv.pdf" className="main-btn" download="Indrajit_Barman_CV.pdf">
-                      <span className="btn-text">Download CV</span>
-                      <span className="btn-icon">
-                        <FontAwesomeIcon icon={faDownload} />
-                      </span>
-                    </a>
-                  </div>
-                </form>
+                <form
+  className="contact-form"
+  action="https://api.web3forms.com/submit"
+  method="POST"
+>
+  {/* Required Access Key */}
+  <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" />
+
+  <div className="input-control i-c-2">
+    <input type="text" name="name" required placeholder="YOUR NAME" />
+    <input type="email" name="email" required placeholder="YOUR EMAIL" />
+  </div>
+
+  <div className="input-control">
+    <input type="text" name="subject" required placeholder="ENTER SUBJECT" />
+  </div>
+
+  <div className="input-control">
+    <textarea
+      name="message"
+      cols="15"
+      rows="8"
+      placeholder="Message Here..."
+      required
+    ></textarea>
+  </div>
+
+  {/* Success / Error Redirects (optional) */}
+  <input type="hidden" name="redirect" value="https://yourdomain.com/thank-you" />
+
+  <div className="submit-btn">
+    <button type="submit" className="main-btn">
+      <span className="btn-text">Send Message</span>
+      <span className="btn-icon">
+        <FontAwesomeIcon icon={faPaperPlane} />
+      </span>
+    </button>
+  </div>
+</form>
+
               </div>
             </div>
           </div>
