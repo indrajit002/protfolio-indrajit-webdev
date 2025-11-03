@@ -1,7 +1,7 @@
 # 🌐 Indrajit’s Developer Portfolio  
 
 ![Portfolio Badge](https://img.shields.io/badge/Portfolio-Live-brightgreen?style=flat&logo=githubpages)  
-**Live Demo:** [Click Here](https://indrajit002.github.io/protfolio-indrajit-webdev/)  
+**Live Demo:** [Click Here](https://indrajitbarman.com)  
 
 ---
 
