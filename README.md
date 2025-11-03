@@ -36,7 +36,7 @@ This is my **personal portfolio website** showcasing my skills, projects, and ex
 
 ## 📸 Screenshots  
  
-
+   
 ---
 
 ## 📥 How to Run Locally  
